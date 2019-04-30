@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
     <!--import stylesheet-->
     <link rel='stylesheet' href='style.css'>
-    <link rel='stylesheet' href='reset.css'>
-    <title>Landing Page</title>
+    <link rel='stylesheet' href='reset.css'>    
+    <title>City Latitude vs. Wind Speed</title>
 </head>
 <body>
     <!--Nav bar-->
@@ -57,21 +57,18 @@
                   </button>
                 </nav>
               </div>
-
-    <div class="container">
-        <div class="row">
-             <div class="col-md-8" id='main'>
-                <h1>Summary: Latitude vs. X</h1></br>
-                <p>
-                    <img src='city_vs_temp.png' alt='city_vs_temp' class='landing_pic'>
-                    The purpose of this project is to analyze weather data from different cities to see if we could find any relationships between the location of the city and its weather patterns. With a sample size of 500 cities, we examined the cloudiness, humidity, wind speed, and temperature of each city. We collected this data from the OpenWeatherMap API. </br>
-                    Using Matplotlib, we were able to plot the data to access if we could find any trends visually. You will see these plots on this site as well as our conclusions. Please feel free to select any of the plots found in the Visualization section of the page to continue to examine our findings.
-                </p>
-            </div>
+    <!--Main Text-->
+<div class='container'>
+    <div class='row'>
+        <div class='col-md-8' id='main'>
+            <h1>Wind Speed</h1>
+            <img src='city_vs_wind.png' alt='city_vs_wind' class='featured'> </br>
+            <p class= 'analysis'> As you can see in this image, there seems to be corrolation between wind speed and a city's latitude. As this plot illustrates, there are cities across the latitude spectrum with very low wind speed (5 or less), as well as cities with higher wind speeds (20 or more). Based on this sample, there does not seem to be any disernable relationship between these two factors. </p>
+        </div>
     <!--visualization section-->   
-    <div class='col-md-3'>
+        <div class='col-md-3'>
             <h1 class='visualization'>Visualizations</h1>
-            <img src='city_vs_wind.png' alt='city_vs_wind' class='lefts'>
+            <img src='city_vs_wind.png' alt='city_vs_wind' class='lefts' id='selected_image'>
             <img src='city_vs_temp.png' alt='city_vs_temp' class='rights'> </br>
             <img src='city_vs_humidity.png' alt='city_vs_humidity' class='lefts'>
             <img src='city_vs_cloud.png' alt='city_vs_cloud' class='rights'>

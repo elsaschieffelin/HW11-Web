@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
     <!--import stylesheet-->
     <link rel='stylesheet' href='style.css'>
-    <link rel='stylesheet' href='reset.css'>
-    <title>Landing Page</title>
+    <link rel='stylesheet' href='reset.css'>    
+    <title>City Latitude vs. Humidity</title>
 </head>
 <body>
     <!--Nav bar-->
@@ -57,25 +57,22 @@
                   </button>
                 </nav>
               </div>
-
-    <div class="container">
-        <div class="row">
-             <div class="col-md-8" id='main'>
-                <h1>Summary: Latitude vs. X</h1></br>
-                <p>
-                    <img src='city_vs_temp.png' alt='city_vs_temp' class='landing_pic'>
-                    The purpose of this project is to analyze weather data from different cities to see if we could find any relationships between the location of the city and its weather patterns. With a sample size of 500 cities, we examined the cloudiness, humidity, wind speed, and temperature of each city. We collected this data from the OpenWeatherMap API. </br>
-                    Using Matplotlib, we were able to plot the data to access if we could find any trends visually. You will see these plots on this site as well as our conclusions. Please feel free to select any of the plots found in the Visualization section of the page to continue to examine our findings.
-                </p>
+    <!--Main Text-->
+<div class='container'>
+    <div class='row'>
+            <div class='col-md-8' id='main'>
+                <h1>Humidity</h1>
+                <img src='city_vs_humidity.png' alt='city_vs_humidity' class='featured'>
+                <p class= 'analysis'> This plot shows the relationship between humidity and a city's latitude. As seen in this plot, there does not appear to be a corrolation between humidity and latitude. Cities that are located across the latitude spectrum have varying humidity levels with no apparent trends. There may be other factors involved in determining how humid a city can get. </p>
             </div>
-    <!--visualization section-->   
-    <div class='col-md-3'>
-            <h1 class='visualization'>Visualizations</h1>
-            <img src='city_vs_wind.png' alt='city_vs_wind' class='lefts'>
-            <img src='city_vs_temp.png' alt='city_vs_temp' class='rights'> </br>
-            <img src='city_vs_humidity.png' alt='city_vs_humidity' class='lefts'>
-            <img src='city_vs_cloud.png' alt='city_vs_cloud' class='rights'>
-        </div>
+        <!--visualization section-->   
+            <div class='col-md-3'>
+                <h1 class='visualization'>Visualizations</h1>
+                <img src='city_vs_wind.png' alt='city_vs_wind' class='lefts' >
+                <img src='city_vs_temp.png' alt='city_vs_temp' class='rights'> </br>
+                <img src='city_vs_humidity.png' alt='city_vs_humidity' class='lefts' id='selected_image'>
+                <img src='city_vs_cloud.png' alt='city_vs_cloud' class='rights'>
+            </div>
     </div>
 </div>
 </body>
