@@ -12,58 +12,57 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
     <!--import stylesheet-->
-    <link rel='stylesheet' href='style.css'>
-    <link rel='stylesheet' href='reset.css'>
+    <link rel='stylesheet' href='Content/style.css'>
     <title>Landing Page</title>
 </head>
 <body>
     <!--Nav bar-->
     <nav id= 'hide-mobile' id="navbar" class="navbar navbar-light bg-light" >
-            <a class="navbar-brand" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/index.html"><div class="btn-group btn-group-lg" role="group" aria-label="Latitude">Latitude</div></a>
-            <ul class="nav nav-pills" id='nav-pills'>
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization1.html">City Latitude vs. Wind Speed</a>
-                            <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization2.html">City Latitude vs. Max Temperature</a>
-                            <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization3.html">City Latitude vs. Humidity</a>
-                            <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization4.html">City Latitude vs. Cloudiness</a>
-                        </div>
-                    </li>    
-                <li class="nav-item">
-                <a class="nav-link" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/compare.html">Comparisons</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/my_data.html">Data</a>
-                </li>
-            </ul>
-        </nav>
+        <a class="navbar-brand" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/index.html"><div class="btn-group btn-group-lg" role="group" aria-label="Latitude">Latitude</div></a>
+        <ul class="nav nav-pills" id='nav-pills'>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization1.html">City Latitude vs. Wind Speed</a>
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization2.html">City Latitude vs. Max Temperature</a>
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization3.html">City Latitude vs. Humidity</a>
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization4.html">City Latitude vs. Cloudiness</a>
+                    </div>
+                </li>    
+            <li class="nav-item">
+            <a class="nav-link" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/compare.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/my_data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
 <!--mobile nav bar-->
-     <div class = 'show-mobile' class="pos-f-t">
-                <div class="collapse" id="navbarToggleExternalContent">
-                  <div class="bg-light p-4">
-                    <h4 class="text-black">Plots</h4>
-                    <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization1.html">City Latitude vs. Wind Speed</a></span></br>
-                    <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization2.html">City Latitude vs. Max Temperature</a></span></br>
-                    <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization3.html">City Latitude vs. Humidity</a></span></br>
-                    <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/visualization4.html">City Latitude vs. Cloudiness</a></span></br>
-                    <h4 class="text-black"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/compare.html">Comparisons</a></h4></br>
-                    <h4 class="text-black"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/my_data.html">Data</a></h4></br>
-                </div>
-                </div>
-                <nav class="navbar navbar-dark bg-dark">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </nav>
-              </div>
+ <div class = 'show-mobile' class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-light p-4">
+                <h4 class="text-black">Plots</h4>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization1.html">City Latitude vs. Wind Speed</a></span></br>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization2.html">City Latitude vs. Max Temperature</a></span></br>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization3.html">City Latitude vs. Humidity</a></span></br>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization4.html">City Latitude vs. Cloudiness</a></span></br>
+                <h4 class="text-black"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/compare.html">Comparisons</a></h4></br>
+                <h4 class="text-black"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/my_data.html">Data</a></h4></br>
+            </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
 
     <div class="container">
         <div class="row">
              <div class="col-md-8" id='main'>
                 <h1>Summary: Latitude vs. X</h1></br>
                 <p>
-                    <img src='city_vs_temp.png' alt='city_vs_temp' class='landing_pic'>
+                    <img src='Content/city_vs_temp.png' alt='city_vs_temp' class='landing_pic'>
                     The purpose of this project is to analyze weather data from different cities to see if we could find any relationships between the location of the city and its weather patterns. With a sample size of 500 cities, we examined the cloudiness, humidity, wind speed, and temperature of each city. We collected this data from the OpenWeatherMap API. </br>
                     Using Matplotlib, we were able to plot the data to access if we could find any trends visually. You will see these plots on this site as well as our conclusions. Please feel free to select any of the plots found in the Visualization section of the page to continue to examine our findings.
                 </p>
@@ -71,10 +70,10 @@
     <!--visualization section-->   
     <div class='col-md-3'>
             <h1 class='visualization'>Visualizations</h1>
-            <img src='city_vs_wind.png' alt='city_vs_wind' class='lefts'>
-            <img src='city_vs_temp.png' alt='city_vs_temp' class='rights'> </br>
-            <img src='city_vs_humidity.png' alt='city_vs_humidity' class='lefts'>
-            <img src='city_vs_cloud.png' alt='city_vs_cloud' class='rights'>
+            <img src='Content/city_vs_wind.png' alt='city_vs_wind' class='lefts'>
+            <img src='Content/city_vs_temp.png' alt='city_vs_temp' class='rights'> </br>
+            <img src='Content/city_vs_humidity.png' alt='city_vs_humidity' class='lefts'>
+            <img src='Content/city_vs_cloud.png' alt='city_vs_cloud' class='rights'>
         </div>
     </div>
 </div>
