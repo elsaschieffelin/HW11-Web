@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--boot strap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+    <!--import stylesheet-->
+    <link rel='stylesheet' href='Content/style.css'>
+    <title>City Latitude vs. Cloudiness</title>
+</head>
+<body>
+    <!--Nav bar-->
+    <nav id= 'hide-mobile' id="navbar" class="navbar navbar-light bg-light" >
+        <a class="navbar-brand" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/index.html"><div class="btn-group btn-group-lg" role="group" aria-label="Latitude">Latitude</div></a>
+        <ul class="nav nav-pills" id='nav-pills'>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization1.html">City Latitude vs. Wind Speed</a>
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization2.html">City Latitude vs. Max Temperature</a>
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization3.html">City Latitude vs. Humidity</a>
+                        <a class="dropdown-item" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization4.html">City Latitude vs. Cloudiness</a>
+                    </div>
+                </li>    
+            <li class="nav-item">
+            <a class="nav-link" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/compare.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/my_data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+<!--mobile nav bar-->
+ <div class = 'show-mobile' class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-light p-4">
+                <h4 class="text-black">Plots</h4>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization1.html">City Latitude vs. Wind Speed</a></span></br>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization2.html">City Latitude vs. Max Temperature</a></span></br>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization3.html">City Latitude vs. Humidity</a></span></br>
+                <span class="text-muted"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/visualization4.html">City Latitude vs. Cloudiness</a></span></br>
+                <h4 class="text-black"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/compare.html">Comparisons</a></h4></br>
+                <h4 class="text-black"><a href="file:///Users/Elsa/Desktop/Bootcamp/Homework/11-Web/HW11-Web/Content/my_data.html">Data</a></h4></br>
+            </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+          </div>
+    <!--Main Text-->
+<div class='container'>   
+    <div class='row'>
+            <div class='col-md-8' id='main'>
+                <h1>Cloudiness</h1>
+                <img src='city_vs_cloud.png' alt='city_vs_cloud' class='featured'>
+                <p class= 'analysis'> This plot shows the relationship between cloudiness and a city's latitude. As shown in this plot, there does not seem to be a corollation between a city's latitude and its cloudiness. Cities at different latitudes have varying levels of cloudiness with no apparent trends or patterns. There may be other factors involved in a city's cloudiness. </p>
+            </div>
+        <!--visualization section-->   
+            <div class='col-md-3'>
+                <h1 class='visualization'>Visualizations</h1>
+                <img src='city_vs_wind.png' alt='city_vs_wind' class='lefts' >
+                <img src='city_vs_temp.png' alt='city_vs_temp' class='rights'> </br>
+                <img src='city_vs_humidity.png' alt='city_vs_humidity' class='lefts'>
+                <img src='city_vs_cloud.png' alt='city_vs_cloud' class='rights' id='selected_image'>
+            </div>
+    </div>
+</div> 
+</body>
+</html>
